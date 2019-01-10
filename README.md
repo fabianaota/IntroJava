@@ -1,2 +1,3 @@
-# IntroJava
-Java Programming Basics course from Udacity
+## IntroJava
+
+#### Java Programming Basics course from Udacity
