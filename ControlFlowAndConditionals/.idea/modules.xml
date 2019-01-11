@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VariablesAndDataTypes.iml" filepath="$PROJECT_DIR$/VariablesAndDataTypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ControlFlowAndConditionals.iml" filepath="$PROJECT_DIR$/ControlFlowAndConditionals.iml" />
     </modules>
   </component>
 </project>
