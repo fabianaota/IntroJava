@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10a32178-35ea-49d4-a6e8-754443407218" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlFlowAndConditionals/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlowAndConditionals/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ControlFlowAndConditionals/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ControlFlowAndConditionals/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VariablesAndDataTypes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VariablesAndDataTypes/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="10a32178-35ea-49d4-a6e8-754443407218" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +71,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547261023249" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547261025121" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../VariablesAndDataTypes" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
