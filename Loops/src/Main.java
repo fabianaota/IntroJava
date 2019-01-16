@@ -37,6 +37,8 @@ public class Main {
         exercise5();
         exercise6();
         exercise7();
+        monopolyRoll1();
+        monopolyRoll2();
 
     }
 
@@ -366,62 +368,44 @@ public class Main {
         }
     }
 
-    //public int diceRoll(int sides) {
-    ////This expression generates a random double in the interval
-    ////[0, sides).
-    //double randomNumber = Math.random() * sides;
-    ////Our random number is now in the interval [1, sides + 1)
-    //randomNumber = randomNumber + 1;
-    ////Casting the random number to an integer will round it down
-    ////to an integer in the 1 to sides range.
-    //return (int) randomNumber;
-    //}
-    //public int monopolyRoll() {
-    //int roll1 = diceRoll(6);
-    //int roll2 = diceRoll(6);
-    //int total = roll1 + roll2;
-    //while (roll1 == roll2) {
-    //roll1 = diceRoll(6);
-    //roll2 = diceRoll(6);
-    //total = total + roll1 + roll2;
-    //}
-    //return total;
-    //}
+    private static int diceRoll(int sides) {
+        double randomNumber = Math.random() * sides;
+        randomNumber = randomNumber + 1;
+        return (int) randomNumber;
+    }
 
-    //public int monopolyRoll() {
-    //int roll1 = diceRoll(6);
-    //int roll2 = diceRoll(6);
-    //int total = roll1 + roll2;
-    ////An extra variable is added to keep track of how many rolls
-    ////have been made.
-    //int rollsSoFar = 1;
-    //while (roll1 == roll2) {
-    ////Here, we return -1 if doubles have been rolled too
-    ////many times in a row.
-    //if (rollsSoFar >= 3) return -1;
-    //roll1 = diceRoll(6);
-    //roll2 = diceRoll(6);
-    //total = total + roll1 + roll2;
-    //rollsSoFar = rollsSoFar + 1;
-    //}
-    //return total;
-    //}
+    private static int monopolyRoll1() {
+        int roll1 = diceRoll(6);
+        int roll2 = diceRoll(6);
+        int total = roll1 + roll2;
+        int rolls = 1;
+        while (roll1 == roll2) {
+            if (rolls >= 3) {
+                roll1 = diceRoll(6);
+                roll2 = diceRoll(6);
+                total = total + roll1 + roll2;
+                rolls = rolls + 1;
+            }
+            System.out.println(total);
+            System.out.println(rolls);
+            return -1;
+        }
+        System.out.println(total);
+        return total;
+    }
 
-    //public int monopolyRoll() {
-    //int roll1 = diceRoll(6);
-    //int roll2 = diceRoll(6);
-    //if (roll1 != roll2) {
-    //return roll1 + roll2;
-    //} else {
-    ////In the case where the two rolls are equal, we want to
-    ////return the current roll plus the return value of another
-    ////call to monopolyRoll(). This is called making a
-    ////recursive call. The recursive call will handle making
-    ////additional rolls, and recursive calls will keep getting
-    ////made until a roll is made where the two values are not
-    ////equal.
-    //return roll1 + roll2 + monopolyRoll();
-    //}
-    //}
+    private static int monopolyRoll2() {
+        int roll1 = diceRoll(6);
+        int roll2 = diceRoll(6);
+        int total = roll1 + roll2;
+        if (roll1 != roll2) {
+            System.out.println(total);
+            return total;
+        }
+        else {
+            System.out.println(total + monopolyRoll2());
+            return total + monopolyRoll2();
+        }
+    }
 
 }
