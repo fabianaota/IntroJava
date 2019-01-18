@@ -101,7 +101,7 @@ public class Game {
         String winnerMessage = checkGameWinner(grid);
         if (!winnerMessage.equals("None")) {
             gui.gameOver(winnerMessage);
-            newGame(false);
+            newGame(true);
             return true;
         }
         return false;
