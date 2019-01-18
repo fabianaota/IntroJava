@@ -160,7 +160,7 @@ public class Game {
             }
         }
         // diagonals check for 'x' winner
-        if (grid[0][0] == 'x' && grid[1][1] == 'x' && grid[2][2] == 'x' || grid[2][0] == 'x' && grid[2][1] == 'x' && grid[2][2] == 'x') {
+        if (grid[0][0] == 'x' && grid[1][1] == 'x' && grid[2][2] == 'x' || grid[2][0] == 'x' && grid[1][1] == 'x' && grid[0][2] == 'x') {
             result = "X wins!";
             win = true;
         }
@@ -172,7 +172,7 @@ public class Game {
             }
         }
         // diagonal check for 'o' winner
-        if (grid[0][0] == 'o' && grid[1][1] == 'o' && grid[2][2] == 'o' || grid[2][0] == 'o' && grid[2][1] == 'o' && grid[2][2] == 'o') {
+        if (grid[0][0] == 'o' && grid[1][1] == 'o' && grid[2][2] == 'o' || grid[2][0] == 'o' && grid[1][1] == 'o' && grid[0][2] == 'o') {
             result = "O wins!";
             win = true;
         }
